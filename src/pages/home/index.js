@@ -2,6 +2,8 @@ import React from 'react'
 
 import SideNavigator from '../../components/side-navigator/SideNavigator';
 import PostList from '../../components/post-list/PostList'
+import PostText from '../../components/PostText/PostText'
+
 import './index.css';
 
 export default function Home() {
@@ -15,7 +17,8 @@ export default function Home() {
           <header className="header-page border-highlight">
             <h1 className="title-page">Página inicial</h1>
           </header>
-          <PostList></PostList>
+          <PostText/>
+          <PostList/>
         </div>
       </div>
     </div>
