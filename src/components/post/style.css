@@ -1,0 +1,23 @@
+.post-item{
+  color:#FFF;
+  padding:15px;
+  display: grid;
+  grid-template-areas: 'avatar header header'
+                        '. post post';
+}
+
+.post-avatar{
+  width: 50px;
+  height: 50px;
+  background: #FFF;
+  grid-area: avatar;
+}
+
+.post-header{
+  grid-area: header;
+}
+
+.post-content{
+  grid-area: post;
+  padding: 5px;
+}

@@ -1,0 +1,46 @@
+#home-page header.header-page{
+  padding:25px;
+}
+
+.border-highlight{
+  box-shadow:0px 0px 1px 1px rgb(56, 68, 77);;
+}
+
+#home-page .grid-page{
+  display: grid;
+  grid-template-columns: 300px 750px 1fr;
+  grid-auto-rows: auto;
+  width: 100%;
+}
+
+#home-page .main{
+  width: 100%;
+  grid-column: 2/3;
+  height: 100%;
+}
+
+#home-page .side-navigator{
+  width: 100%;
+  height: 100%;
+  padding:10px;
+}
+
+#home-page  .main .title-page{
+  color:#FFF;
+  font-size:1.3em;
+  font-weight: bold;
+}
+
+#home-page .side-navigator {
+  padding-top:25px;
+}
+
+#home-page .side-navigator .logo{
+  width: 35px;
+  margin-left: 10px;
+}
+
+#home-page .side-navigator .logo svg path{
+  /* stroke:#FFF; */
+  fill:#FFF;
+}
