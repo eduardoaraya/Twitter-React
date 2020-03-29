@@ -1,5 +1,5 @@
 
-.icon{
+.navigator-left .icon{
   width: 35px;
   margin-right: 25px;
   margin-left: 5px;
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.icon svg {
+.navigator-left .icon svg {
   width: 35px;
   height: 35px;
 }

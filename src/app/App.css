@@ -21,3 +21,15 @@ body{
   width: 100%;
   margin:0 auto;
 }
+
+.icon svg {
+  width: 15px;
+  height: 15px;
+}
+.icon svg path{
+  fill:#FFF;
+}
+
+.border-highlight{
+  box-shadow:0px 0px 1px 1px rgb(56, 68, 77);;
+}
