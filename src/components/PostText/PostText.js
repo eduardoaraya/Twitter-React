@@ -4,7 +4,7 @@ import './style.css';
 
 export default function PostText() {
   return (
-    <div className="post">
+    <div className="post  border-highlight">
       <div className="post-area">
           <figure className="avatar"></figure>
           <div className="post-text">

@@ -37,7 +37,7 @@
   width: 100%;
   grid-column: 2/3;
   height: 100%;
-  padding-top:75px;
+  padding-top:55px;
   padding-bottom:175px;
 }
 
@@ -60,4 +60,11 @@
 #home-page .side-navigator .logo svg path{
   /* stroke:#FFF; */
   fill:#FFF;
+}
+
+
+.separator{
+  background-color: rgb(37, 51, 65);
+  height: 10px;
+  width: 100%;
 }

@@ -18,6 +18,7 @@ export default function Home() {
             <h1 className="title-page">Página inicial</h1>
           </header>
           <PostText/>
+          <div className="separator"></div>
           <PostList/>
         </div>
       </div>
