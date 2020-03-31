@@ -40,6 +40,12 @@
   width: auto;
 }
 
+@media(max-width:1040px){
+  .navigator-left ul li span{
+    display: none;
+  }
+}
+
 
 .navigator-left ul li:hover
 , .navigator-left ul li.active{

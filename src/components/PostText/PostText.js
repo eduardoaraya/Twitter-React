@@ -7,7 +7,7 @@ export default function PostText() {
     <div className="post">
       <div className="post-area">
           <figure className="avatar"></figure>
-          <div class="post-text">
+          <div className="post-text">
             <textarea className="post-input" placeholder="O que está acontecendo?"></textarea>
           </div>
       </div>
