@@ -23,6 +23,10 @@
   font-size: 1em;
 }
 
+.post-input::placeholder{
+  font-size:1.4em;
+}
+
 .post-options{
   width: 100%;
   display: flex;
