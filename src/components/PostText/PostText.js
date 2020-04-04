@@ -1,22 +1,33 @@
-import React, { useRef, useEffect } from 'react'
-
+import React, { useRef } from 'react'
+import { connect } from 'react-redux';
 import './style.css';
 
-export default function PostText() {
+const PostText = ({ dispatch }) => {
 
   const tweetText = useRef(null);
-  
+
   const tweetar = () => {
-    console.log(tweetText.current.value);
+    dispatch({
+      type: 'ADD_POST',
+      post: {
+        _id: Math.random() * 100,
+        timestamp: new Date().getUTCFullYear(),
+        user_id: 1,
+        user_name: 'Eduardo',
+        user_nickname: '@eduardo',
+        picture_url: '',
+        post_text: tweetText.current.value
+      }
+    })
   }
 
   return (
     <div className="post  border-highlight">
       <div className="post-area">
-          <figure className="avatar"></figure>
-          <div className="post-text">
-            <textarea className="post-input" ref={tweetText} placeholder="O que está acontecendo?"></textarea>
-          </div>
+        <figure className="avatar"></figure>
+        <div className="post-text">
+          <textarea className="post-input" ref={tweetText} placeholder="O que está acontecendo?"></textarea>
+        </div>
       </div>
       <div className="post-options">
         <button className="btn btn-primary" onClick={tweetar}>Tweetar</button>
@@ -24,3 +35,6 @@ export default function PostText() {
     </div>
   )
 }
+
+
+export default connect()(PostText);

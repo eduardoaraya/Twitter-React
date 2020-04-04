@@ -4,6 +4,7 @@
   display: grid;
   grid-template-areas: 'avatar header header'
                         '. post post';
+  grid-template-columns: 50px 1fr 1fr;
 }
 
 .post-avatar{
@@ -12,6 +13,7 @@
   background: #FFF;
   grid-area: avatar;
   border-radius: 50%;
+  background-size: contain;
 }
 
 .post-header{

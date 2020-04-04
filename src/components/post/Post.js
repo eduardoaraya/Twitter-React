@@ -2,15 +2,17 @@ import React from 'react'
 
 import './style.css';
 
-export default function Post() {
+export default function Post({post}) {
   return (
     <div className="post-item border-highlight">
-      <figure className="post-avatar"></figure>
+      <figure className="post-avatar" style={{
+        backgroundImage: post.picture_url ? `url(${post.picture_url})` : `url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ85ZvDEOb9-18hUBBlBRvl84QKhE9Z2oMULrNeVVslY5XWUN1n&usqp=CAU)`
+      }}></figure>
       <header className="post-header">
         <div className="post-info">
-          <span className="name">Name</span>
-          <span className="nickname">@nickname</span>
-          <span className="time">7 min</span>
+        <span className="name">{post.user_name}</span>
+        <span className="nickname">{post.user_nickname}</span>
+        <span className="time">{post.timestamp}</span>
         </div>
         <div className="post-more">
           <div className="icon">
@@ -19,9 +21,7 @@ export default function Post() {
         </div>
       </header>
       <div className="post-content">
-        <span>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </span>
+        <span>{post.post_text}</span>
       </div>
     </div>
   )
